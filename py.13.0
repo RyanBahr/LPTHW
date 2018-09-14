@@ -1,0 +1,9 @@
+from sys import argv
+
+first, second, third = argv
+
+print "Your first variable is:", first
+print "Your second variable is:", second
+print "Your third variable is:", third
+ #I wouldn't say that I understand import argv quite yet,
+ #I assume that it's an alternative way of naming/inputting variables contrast to raw_input()

@@ -1,0 +1,15 @@
+from sys import argv #imports feature from 'sys' module
+
+script, filename = argv #defines the file to be opened as that which user puts in argv
+
+txt = open(filename) #Opens the file specified by argv
+
+print "Here's your file %r:" % filename #This just tells the user what file they've used in argv.
+print txt.read() #This reads the file, and then prints what is read
+
+print "Type the filename again:" #Just a prompt
+file_again = raw_input("> ") #Allows use to select the file to be read.
+
+txt_again = open(file_again) #establishes variable "txt_again" as being defined as opening "file_again"
+
+print txt_again.read() #.read() is attached to "txt_again". Basically, the file is read, and that reading is printed

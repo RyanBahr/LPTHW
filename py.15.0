@@ -1,0 +1,8 @@
+from sys import argv #imports feature from 'sys' module
+
+script, filename = argv #defines the file to be opened as that which user puts in argv
+
+txt = open(filename) #Opens the file specified by argv
+
+print "Here's your file %r:" % filename #This just tells the user what file they've used in argv.
+print txt.read() #This reads the file, and then prints what is read

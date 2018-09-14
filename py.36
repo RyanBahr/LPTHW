@@ -1,0 +1,11 @@
+RULES FOR IF-STATEMENTS
+
+1. Every iff statement must have an "else"
+
+if this "else" should never run because it doesn't make sense, then you must use a 'die' function in the else that prints out an error message and dies, just like we did in ex. 35.
+
+3. never nest if-statements more than 2 deep. Even then, try to go for 1-deep if.
+
+treat if statements like paragraphs, where each "if, elif, else, etc" is like a set of sentences.
+
+BOolean tests should be simple. If they are complex, move their calculations to variables earlier in the function.

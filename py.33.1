@@ -1,0 +1,23 @@
+numbers = []
+print "Pick a number!"
+limit = input("> ")
+print "Pick another number!"
+another = input("> ")
+
+def loop(limit):
+    i = 0
+    while i < limit:
+        print "At the top i is %d" % i
+        numbers.append(i)
+
+        i = i + another
+        print "Numbers now: ", numbers
+        print "At the bottom i is %d" % i
+
+    print "The numbers: "
+
+    for num in numbers:
+        print num
+
+if limit >= 0:
+    loop(limit)

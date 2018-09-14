@@ -1,0 +1,16 @@
+tabby_cat = "\tI'm tabbed in."
+persian_cat = "I'm split\non a line."
+backslash_cat = "I'm \\ a \\ cat" # \\ makes a regular blackslash
+
+fat_cat = """
+I'll do a list:
+\t* Cat food
+\t* Fishies
+\t* Catnip\n\t* Grass
+""" # I can't see why I would use single quotes instead of double quotes
+#I suppose that if the string itself uses triple-quotes of a type, I should use triple-quotes of another type
+
+print tabby_cat
+print persian_cat
+print backslash_cat
+print fat_cat

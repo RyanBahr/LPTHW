@@ -1,0 +1,33 @@
+from sys import argv
+
+script, input_file = argv #Allows the user to input the file
+
+def print_all(f): #defines the file
+    print f.read() #tells "print_all" to read the file
+
+def rewind(f): #Defines "Rewind" as a function,
+    f.seek(0) #Makes the rewind function seek point '0'
+
+def print_a_line(line_count, f): #This is a function where the input is "line_count", and "F")
+    print line_count, f.readline() #Defines the function "Print_a_line", in this case, telling the function to print both the line-number, and to read the selected line
+
+current_file = open(input_file) #Selects a file to manipulate. In this case, the file is defined as that input via argv
+
+print "First, let's print the whole file:\n" #For the student
+
+print_all(current_file) #A command to print out the contents of the file w/ line numbers
+
+print "Now let's rewind, kind of like a tape." #for the student
+
+rewind(current_file) #I suppose that when you print a file, you have to rewind it to print it again
+
+print "Let's print 3 lines:" #For the student
+
+current_line = 1 Esablishes current line variable.
+print_a_line(current_line, current_file)#Prints the line indicated
+
+current_line = current_line + 1#Adds "1" to the current_line variable
+print_a_line(current_line, current_file)#Prints the line indicated
+
+current_line = current_line + 1 #Adds "1" to the current_line variable
+print_a_line(current_line, current_file) #Prints the line indicated
